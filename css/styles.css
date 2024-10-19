@@ -55,6 +55,8 @@ body {
       display: flex;
        align-items: center;
        gap: 40px;
+
+       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
    
    .logo {
@@ -135,7 +137,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
    }
    
@@ -157,7 +159,7 @@ body {
      line-height: 1.5;
      letter-spacing: 0.04em;
      color: #fff;
-     background: #4d5ae5;
+     background-color: #4d5ae5;
      cursor: pointer;
      margin: 0 auto;
      display: block;
@@ -166,7 +168,7 @@ body {
      min-width: 169px;
      height: 56px;
 
-     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
    
    .hero-button:hover,
@@ -264,6 +266,7 @@ body {
  border-bottom-right-radius: 4px;
  border-bottom-left-radius: 4px;
  background-color: #FFFFFF
+ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .block {
@@ -326,6 +329,7 @@ body {
  }
 
  /*------portfolio------*/
+
 .portfolio{
  padding-top: 120px;
  padding-bottom: 120px;
@@ -345,7 +349,7 @@ body {
 .portfolio-item{
  width: calc((100% - 48px) / 3);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: cbox-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
   transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
@@ -365,7 +369,7 @@ body {
 .cover-text{
  position: absolute;
  background-color: #4d5ae5;
- color: #FFFFFF;
+ color: #f4f4fd;;
   font-size: 16px;
  line-height: 1.5;
  letter-spacing: 0.02em;
@@ -373,10 +377,9 @@ body {
  left: 0;
  height: 100%;
  width: 100%;
- padding-top: 40px;
- padding-right: 32px;
- padding-left: 32px;
+ padding: 40px 32px;
  transform: translateY(100%);
+ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .block-services{
